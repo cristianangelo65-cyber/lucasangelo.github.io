@@ -1,3 +1,6 @@
+body {
+  border: 5px solid red;
+}
 
 :root {
   --primary-blue: #1a3a5f;
