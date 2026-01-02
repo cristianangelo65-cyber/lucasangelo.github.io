@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Escolhas</title>
+</head>
+<body>
+  <h2>Decisão Importante</h2>
+
+  <p>Treinar mais ou descansar?</p>
+
+  <button onclick="decidir('treino')">Treinar</button>
+  <button onclick="decidir('descanso')">Descansar</button>
+
+  <p id="resposta"></p>
+
+  <script>
+    function decidir(opcao) {
+      if (opcao === 'treino') {
+        document.getElementById("resposta").innerText =
+          "Você treinou e evoluiu!";
+      } else {
+        document.getElementById("resposta").innerText =
+          "Você descansou e evitou lesões.";
+      }
+    }
+  </script>
+</body>
+</html>
