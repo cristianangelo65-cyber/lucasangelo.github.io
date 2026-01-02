@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestão do Jogador</title>
+</head>
+<body>
+  <h2>Gestão do Jogador</h2>
+
+  <p>Nome: <span id="nome"></span></p>
+  <p>Posição: <span id="posicao"></span></p>
+  <p>Nível: <span id="nivel">1</span></p>
+
+  <a href="gameplay.html">▶ Jogar Partida</a><br><br>
+  <a href="escolha.html">▶ Decisões</a>
+
+  <script>
+    document.getElementById("nome").innerText = localStorage.getItem("nome");
+    document.getElementById("posicao").innerText = localStorage.getItem("posicao");
+  </script>
+</body>
+</html>
