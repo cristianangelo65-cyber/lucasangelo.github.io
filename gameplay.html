@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Partida</title>
+</head>
+<body>
+  <h2>Dia de Jogo ⚽</h2>
+
+  <button onclick="jogar()">Jogar Partida</button>
+
+  <p id="resultado"></p>
+
+  <a href="gestao.html">⬅ Voltar</a>
+
+  <script>
+    function jogar() {
+      let gol = Math.random() > 0.5 ? "Você marcou um gol!" : "Partida difícil, sem gols.";
+      document.getElementById("resultado").innerText = gol;
+    }
+  </script>
+</body>
+</html>
