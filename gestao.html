@@ -2,31 +2,55 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestão do Jogador</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h2>Gestão do Jogador</h2>
 
-  <p>Nome: <span id="nome"></span></p>
-  <p>Posição: <span id="posicao"></span></p>
-  <p>Nível: <span id="nivel">1</span></p>
-  <p>Velocidade: <span id="vel"></span></p>
-  <p>Chute: <span id="chu"></span></p>
-  <p>Passe: <span id="pas"></span></p>
-  <p>Físico: <span id="fis"></span></p>
-  
+<header class="top-bar">
+  <div class="profile-section">
+    <div class="avatar">
+      <i class="fas fa-user"></i>
+    </div>
+    <div>
+      <p><strong id="nomeJogador">Jogador</strong></p>
+      <p class="level" id="posicaoJogador">Posição</p>
+    </div>
+  </div>
+</header>
 
-  <a href="gameplay.html">▶ Jogar Partida</a><br><br>
-  <a href="escolha.html">▶ Decisões</a>
+<main class="main-content">
 
-  <script>
-    document.getElementById("nome").innerText = localStorage.getItem("nome");
-    document.getElementById("posicao").innerText = localStorage.getItem("posicao");
-    vel.innerText = localStorage.getItem("vel");
-    chu.innerText = localStorage.getItem("chu");
-    pas.innerText = localStorage.getItem("pas");
-    fis.innerText = localStorage.getItem("fis");
-  
-  </script>
+  <div class="career-logo">
+    <h1>Gestão</h1>
+  </div>
+
+  <div class="card">
+    <p>Idade: <strong><span id="idadeJogador"></span></strong></p>
+    <p>Velocidade: <strong><span id="vel"></span></strong></p>
+    <p>Chute: <strong><span id="chu"></span></strong></p>
+    <p>Passe: <strong><span id="pas"></span></strong></p>
+    <p>Físico: <strong><span id="fis"></span></strong></p>
+  </div>
+
+  <nav class="nav-buttons">
+    <button class="nav-btn" onclick="treinar()">
+      <i class="fas fa-dumbbell"></i>
+      TREINAR
+    </button>
+
+    <a href="gameplay.html" class="nav-btn">
+      <i class="fas fa-futbol"></i>
+      JOGAR PARTIDA
+    </a>
+  </nav>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
