@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Jogador</title>
+</head>
+<body>
+  <h2>Criar Personagem</h2>
+
+  <label>Nome:</label><br>
+  <input type="text" id="nome"><br><br>
+
+  <label>Posição:</label><br>
+  <select id="posicao">
+    <option>Atacante</option>
+    <option>Meia</option>
+    <option>Zagueiro</option>
+    <option>Goleiro</option>
+  </select><br><br>
+
+  <button onclick="salvar()">Criar</button>
+
+  <script>
+    function salvar() {
+      localStorage.setItem("nome", document.getElementById("nome").value);
+      localStorage.setItem("posicao", document.getElementById("posicao").value);
+      window.location.href = "gestao.html";
+    }
+  </script>
+</body>
+</html>
