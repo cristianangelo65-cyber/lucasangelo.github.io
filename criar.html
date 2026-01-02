@@ -40,6 +40,18 @@
       localStorage.setItem("posicao", document.getElementById("posicao").value);
       window.location.href = "gestao.html";
     }
+    function salvar() {
+      localStorage.setItem("nome", nome.value);
+      localStorage.setItem("posicao", posicao.value);
+      localStorage.setItem("vel", vel.value);
+      localStorage.setItem("chu", chu.value);
+      localStorage.setItem("pas", pas.value);
+      localStorage.setItem("fis", fis.value);
+
+      window.location.href = "gestao.html";
+}
+
+  
   </script>
 </body>
 </html>
