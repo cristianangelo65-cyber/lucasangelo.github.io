@@ -18,6 +18,19 @@
       let gol = Math.random() > 0.5 ? "Você marcou um gol!" : "Partida difícil, sem gols.";
       document.getElementById("resultado").innerText = gol;
     }
+    
+    function jogar() {
+      let chute = Number(localStorage.getItem("chu"));
+      let chance = Math.random() * 100;
+      
+      if (chance < chute) {
+        resultado.innerText = "⚽ GOOOL! Você marcou!";
+      } else {
+        resultado.innerText = "❌ Sem gols nessa partida.";
+      }
+    }
+
+  
   </script>
 </body>
 </html>
