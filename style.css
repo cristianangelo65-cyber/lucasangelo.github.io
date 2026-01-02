@@ -102,3 +102,16 @@ body {
   font-size: 0.8rem;
   color: var(--accent-gold);
 }
+.card {
+  background: rgba(0,0,0,0.5);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  min-width: 260px;
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
